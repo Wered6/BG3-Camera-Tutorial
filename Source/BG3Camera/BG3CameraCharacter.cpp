@@ -62,13 +62,13 @@ void ABG3CameraCharacter::NotifyControllerChanged()
 	Super::NotifyControllerChanged();
 
 	// Add Input Mapping Context
-	if (APlayerController* PlayerController = Cast<APlayerController>(Controller))
-	{
-		if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer()))
-		{
-			Subsystem->AddMappingContext(DefaultMappingContext, 0);
-		}
-	}
+	// if (APlayerController* PlayerController = Cast<APlayerController>(Controller))
+	// {
+	// 	if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer()))
+	// 	{
+	// 		Subsystem->AddMappingContext(DefaultMappingContext, 0);
+	// 	}
+	// }
 }
 
 void ABG3CameraCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
